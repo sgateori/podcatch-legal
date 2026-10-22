@@ -9,7 +9,7 @@
 <body>
 
 <h1>Podcatch Privacy Policy</h1>
-<p class="meta"><strong>App:</strong> Podcatch (<code>com.podcatch</code>) &middot; <strong>Developer:</strong> [DEVELOPER NAME] &middot; <strong>Last updated:</strong> 2026-10-22</p>
+<p class="meta"><strong>App:</strong> Podcatch (<code>com.podcatch</code>) &middot; <strong>Developer:</strong> sgateori &middot; <strong>Last updated:</strong> 2026-10-22</p>
 
 <p>Podcatch is a podcast player. You subscribe to podcast feeds, stream or download episodes, and listen. The app has no account, no sign-in and no ads, and the developer runs no server for it.</p>
 
@@ -18,9 +18,7 @@
 
 <h2>Crash reports and usage statistics (Firebase)</h2>
 <p>The app uses Google Firebase Crashlytics and Firebase Analytics. Firebase acts as our service provider and processes this data on our behalf; we do not sell it or use it for advertising.</p>
-<!-- OPEN: "Shared" in the Data safety form: sheet proposes Shared = No (Firebase as service provider); conservative alternative is Shared = Yes (analytics). Owner to choose; wording above must match. -->
 <p><strong>This is on by default and the app does not ask first.</strong> There is one switch, <em>Share crash reports and usage statistics</em> (Settings &gt; Privacy). Collection starts when you first open the app, before you can see the switch, and you can turn it off at any time; collection then stops. It is never active in debug builds. We do not claim that your consent is requested.</p>
-<!-- OPEN: Default ON with no first-run prompt (opt-out). Sheet open point 1: owner may change the app to default-off / first-run prompt, or answer "required" in the form. Keep this paragraph in step with that decision. -->
 <table>
 <tr><th>Data</th><th>Purpose</th></tr>
 <tr><td>Crash reports and handled errors (for example a feed that could not be parsed, an HTTP, TLS or timeout error, a failed download): a stack trace, the screen name, and recent steps such as opening a screen or subscribing</td><td>Fix bugs</td></tr>
@@ -30,9 +28,7 @@
 </table>
 <p>The app does not deliberately send feed addresses, show or episode names, your search text, file names, or your location to Firebase.</p>
 <p><strong>Limit:</strong> if the app crashes with an unexpected error, the error text produced by Android or a library is sent as it is. The app does not filter it, and in rare cases it could include a web address.</p>
-<!-- OPEN: Uncaught crash text is not redacted; Podcatch has no Redact class (sheet open point 3). Keep "does not deliberately send" wording until the app redacts. -->
 <p>Google also derives an approximate country or region from your IP address when Analytics data arrives. The app never reads your location and has no location permission.</p>
-<!-- OPEN: Approximate location via Analytics IP (sheet open point 4): currently not declared in the Data safety form; align form and this sentence if Firebase's Play disclosure guidance lists it. -->
 <p>Data is encrypted in transit. See <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2>Other network connections (not sent to the developer)</h2>
@@ -41,7 +37,6 @@
 <li><strong>Apple's podcast directory</strong> (<code>itunes.apple.com</code>), when you use Discover search. Your search text is sent to Apple to get results, and Apple's own policy applies.</li>
 <li><strong>The servers that host the feeds you subscribe to</strong>, and the audio, images and other data those feeds point to. Those hosts can see your phone's IP address, the <code>Podcatch/&lt;version&gt;</code> user agent, and which feed or episode you request, as with any podcast app. Some feeds use plain http; the app allows this so those feeds work, which means those requests are not encrypted.</li>
 </ul>
-<!-- OPEN: Stance that these user-initiated third-party requests (Apple search, feed hosts) are not declared as developer collection or sharing is unconfirmed (sheet open point 5); owner to confirm. They are disclosed here either way. -->
 <p>The developer does not receive or route this traffic.</p>
 
 <h2>Permissions</h2>
@@ -52,8 +47,6 @@
 
 <h2>Your choices and deletion</h2>
 <p>Turn the switch off in Settings &gt; Privacy at any time. Uninstalling removes local data. Data in Firebase is tied to a random installation ID, not to your identity, so we can only locate it if you send us that ID. To ask us to delete data tied to your installation, email us the ID and we will delete what we can match.</p>
-<!-- OPEN: Deletion request offered "by email" is the sheet's proposal (Data safety: "Proposed: Yes"), not yet confirmed by the owner (sheet open point 6). Policy and form must say the same. -->
-
 <h2>Children</h2>
 <p>Podcatch is not directed at children.</p>
 
